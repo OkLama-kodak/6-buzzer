@@ -2,7 +2,7 @@ package quarter2;
 
 import org.junit.Test;
 
-public class CarianProfile {
+public class CarianProfileTest {
 @Test
 public void printMyProfile() {
     // --- 1. THE INPUT (storing your personal details in variables) ---

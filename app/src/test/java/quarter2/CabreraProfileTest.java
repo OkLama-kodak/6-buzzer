@@ -2,7 +2,7 @@ package quarter2;
 
 import org.junit.Test;
 
-public class CabreraProfile {
+public class CabreraProfileTest {
     @Test
     public void printMyProfile() {
         // --- 1. THE INPUT (storing your personal details in variables) ---
