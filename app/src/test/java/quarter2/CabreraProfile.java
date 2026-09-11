@@ -7,7 +7,7 @@ public class CabreraProfile {
     public void printMyProfile() {
         // --- 1. THE INPUT (storing your personal details in variables) ---
         String myName = "Scarlet";
-        String myFavFood = "Menudo";
+        String favFood = "Menudo";
         String myPetName = "Cyrus";
         int myAge = 16;
 
@@ -15,7 +15,9 @@ public class CabreraProfile {
         System.out.println("--- MY DIGITAL PROFILE ---");
         System.out.println("Hello, my name is" + myName + "and i am " + myAge );
         System.out.println( "My pets name is " + myPetName);
-
+        System.out.println( " My favorite food is" + favFood);
+        System.out.println( "My pets name is " + myPetName);
+        System.out.println( " My favorite food is" + favFood);
 
     }
 }
