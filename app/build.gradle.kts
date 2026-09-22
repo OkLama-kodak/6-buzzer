@@ -101,3 +101,26 @@ setupDummySourceSets(project)
 project.afterEvaluate {
     setupDummySourceSets(project)
 }
+
+tasks.addRule("Pattern: <className>.main()") {
+    val taskName = this
+    if (taskName.endsWith(".main()")) {
+        val className = taskName.substringBefore(".main()")
+        tasks.register<JavaExec>(taskName) {
+            dependsOn("compileDebugJavaWithJavac", "compileDebugUnitTestJavaWithJavac")
+            mainClass.set(className)
+            val debugClasses = project.layout.buildDirectory.dir("intermediates/javac/debug/compileDebugJavaWithJavac/classes")
+            val unitTestClasses = project.layout.buildDirectory.dir("intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes")
+            val debugRuntime = configurations.findByName("debugRuntimeClasspath")
+            val testRuntime = configurations.findByName("debugUnitTestRuntimeClasspath")
+
+            classpath = files(
+                debugClasses,
+                unitTestClasses,
+                debugRuntime ?: project.files(),
+                testRuntime ?: project.files()
+            )
+            standardInput = System.`in`
+        }
+    }
+}

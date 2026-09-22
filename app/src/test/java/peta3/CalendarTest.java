@@ -22,7 +22,7 @@ public class CalendarTest {
     static int year;
 
     // ==========================
-    // MAIN PROGRAM
+    // MAIN PROGRAM1
     // ==========================
 
     public static void main(String[] args) {

@@ -28,8 +28,14 @@ public class TaskCreation {
             System.out.println("==========================");
 
             System.out.print("Choose an option: ");
+            if (!scanner.hasNextInt()) {
+                System.out.println("\nNo standard input provided. Exiting.");
+                break;
+            }
             choice = scanner.nextInt();
-            scanner.nextLine();
+            if (scanner.hasNextLine()) {
+                scanner.nextLine();
+            }
 
             switch (choice) {
 
