@@ -10,7 +10,7 @@ public class FastFoodTest {
         do {
             System.out.println("==========================");
             System.out.println("      Khurt's FastFood       ");
-            System.out.println("1. ");
+            System.out.println("1. Drinks ");
             System.out.println("2. Buy Snacks");
             System.out.println("3. Exit");
 
