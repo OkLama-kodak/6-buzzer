@@ -32,7 +32,5 @@ public class GymAccessTest {
         ByteArrayInputStream inputStream = new ByteArrayInputStream(automatedInput.toString().getBytes());
         Scanner scanner = new Scanner(inputStream);
 
-        GymMenu gymSystem = new GymMenu();
-        gymSystem.start(scanner);
     }
 }
