@@ -1,14 +1,25 @@
 package quarter2practicalexam;
 
-import java.io.IOException;
+
 
 public class Izon {
     public static void main(String[] args) {
-        boolean running = true;
-        int choice = 0;
-        //Simulated Inputs
         String[] simulatedInputs = {
-                //Step 1 and 2 buy tokens and low ticket
-                "1", //Step 1: Buying tokens
-                "2", //Step 2: Choosing the price
-                "200",//Step 3: Low ticket count
+                "1", //Buy tokens
+                "2", //Claim Prize
+                "200", //Low ticket count
+                "2", //Claim Prize
+                "500", //High ticket count
+                "3", //Exit
+
+        };
+
+        boolean running = true;
+        int inputIndex = 0;
+
+        while (running && inputIndex < simulatedInputs.length) {
+            //Main Menu
+
+        }
+   }
+}
