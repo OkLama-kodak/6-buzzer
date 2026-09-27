@@ -1,4 +1,4 @@
-package com.example.sampleapplicationfordemo.quarter2.practicalexam;
+package quarter2practicalexam;
 import org.junit.Test;
 import java.io.ByteArrayInputStream;
 import java.util.Scanner;

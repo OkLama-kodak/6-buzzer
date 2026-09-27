@@ -121,6 +121,12 @@ tasks.addRule("Pattern: <className>.main()") {
                 testRuntime ?: project.files()
             )
             standardInput = System.`in`
+
+            tasks.register("runIzon") {
+                group = "application"
+                mainClass.set("quarter2practicalexam.Izon") // Updated with subpackage
+                classpath = sourceSets["main"].runtimeClasspath
+            }
         }
     }
 }

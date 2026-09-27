@@ -1,7 +1,5 @@
 package quarter2practicalexam;
 
-
-
 public class Izon {
     public static void main(String[] args) {
         String[] simulatedInputs = {
@@ -19,7 +17,48 @@ public class Izon {
 
         while (running && inputIndex < simulatedInputs.length) {
             //Main Menu
+            System.out.println("\n--- MENU ---");
+            System.out.println("1. Buy Tokens");
+            System.out.println("2. Claim Prize");
+            System.out.println("3. Exit");
 
+            String menuChoice = simulatedInputs[inputIndex++].trim();
+            System.out.println(menuChoice);
+
+            switch(menuChoice) {
+                case "1":
+                    System.out.println("Buying tokens...");
+                    break;
+
+                case "2":
+                    System.out.println("Claiming prize...");
+                    System.out.println("Enter ticket count:");
+
+                    if (inputIndex < simulatedInputs.length) {
+                        String ticketInput = simulatedInputs[inputIndex++];
+                        System.out.println(ticketInput);
+
+                        int ticketCount = Integer.parseInt(ticketInput);
+
+                        if (ticketCount < 500) {
+                            System.out.println("Keep Playing!(Need Atleast 500 Tickets)");
+                        } else {
+                            System.out.println("Claiming Prize!");
+                        }
+                    }
+                    break;
+
+                case "3":
+                    System.out.println("Exiting...");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("Invalid option!");
+            }
+        if (inputIndex >= simulatedInputs.length && running) {
+            System.out.println("\n--- SIMULATION COMPLETE ---");
+        }
         }
    }
 }
