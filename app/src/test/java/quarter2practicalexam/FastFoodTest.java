@@ -46,6 +46,21 @@ public class FastFoodTest {
                     System.out.println();
                     break;
 
+                case 2:
+                    System.out.println("\nYou ordered Fries!");
+                    System.out.println();
+                    break;
+
+                case 3:
+                    System.out.println("\nThank you for ordering!");
+                    break;
+
+                default:
+                    System.out.println("\nInvalid option. Please try again.\n");
+            }
+
+        } while (choice != 3);
+        }
 
 
 
