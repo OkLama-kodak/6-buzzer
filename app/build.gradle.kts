@@ -122,11 +122,27 @@ tasks.addRule("Pattern: <className>.main()") {
             )
             standardInput = System.`in`
 
-            tasks.register("runIzon") {
-                group = "application"
-                mainClass.set("quarter2practicalexam.Izon") // Updated with subpackage
-                classpath = sourceSets["main"].runtimeClasspath
-            }
+
         }
     }
+}
+
+tasks.register<JavaExec>("runIzon") {
+    group = "application"
+    mainClass.set("quarter2practicalexam.Izon")
+    dependsOn("compileDebugJavaWithJavac", "compileDebugUnitTestJavaWithJavac")
+
+    val debugClasses = project.layout.buildDirectory.dir("intermediates/javac/debug/compileDebugJavaWithJavac/classes")
+    val unitTestClasses = project.layout.buildDirectory.dir("intermediates/javac/debugUnitTest/compileDebugUnitTestJavaWithJavac/classes")
+    val debugRuntime = configurations.findByName("debugRuntimeClasspath")
+    val testRuntime = configurations.findByName("debugUnitTestRuntimeClasspath")
+
+    classpath = files(
+        debugClasses,
+        unitTestClasses,
+        debugRuntime ?: project.files(),
+        testRuntime ?: project.files()
+    )
+
+    standardInput = System.`in`
 }
