@@ -2,7 +2,7 @@ package quarter2practicalexam;
 
 import org.junit.Test;
 
-public class Izon {
+public class IzonArcadeTest {
     @Test
     public void main() {
         String[] simulatedInputs = {
