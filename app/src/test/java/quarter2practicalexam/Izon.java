@@ -1,7 +1,10 @@
 package quarter2practicalexam;
 
+import org.junit.Test;
+
 public class Izon {
-    public static void main(String[] args) {
+    @Test
+    public void main() {
         String[] simulatedInputs = {
                 "1", //Buy tokens
                 "2", //Claim Prize

@@ -4,8 +4,8 @@ import org.junit.Test;
 
 public class FastFoodTest {
     @Test
-    public static void main(String[] args) {
-        int choice;
+    public void testFastFood() {
+        int choice = 3;
 
         do {
             System.out.println("==========================");
@@ -14,6 +14,6 @@ public class FastFoodTest {
             System.out.println("2. Chicken");
             System.out.println("3. Exit");
 
-        }
+        } while (choice != 3);
     }
 }
