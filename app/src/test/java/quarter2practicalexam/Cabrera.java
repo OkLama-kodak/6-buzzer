@@ -1,10 +1,10 @@
 package quarter2practicalexam;
 
-import org.junit.Test;
+
 
 public class Cabrera {
 
-    @Test
+
     public void testLibraryFlow() {
         System.out.println("--- GENERATING LIBRARY TEST DATA ---");
 
@@ -28,3 +28,44 @@ public class Cabrera {
 
             String menuChoice = automatedInputs[inputIndex++].trim();
             System.out.println(menuChoice);
+
+            switch (menuChoice) {
+                case "1":
+                    System.out.println("Borrowing book...");
+                    break;
+
+                case "2":
+                    System.out.println("Paying fines...");
+                    System.out.println("Enter payment amount:");
+
+                    if (inputIndex < automatedInputs.length) {
+                        String paymentInput = automatedInputs[inputIndex++].trim();
+                        System.out.println(paymentInput);
+
+                        int paymentAmount = Integer.parseInt(paymentInput);
+
+                        if (paymentAmount < 15) {
+                            System.out.println("Insufficient payment! (Need at least 15)");
+                        } else {
+                            int change = paymentAmount - 15;
+                            System.out.println("Fine Paid Successfully! Change: " + change);
+                        }
+                    }
+                    break;
+
+                case "3":
+                    System.out.println("Exiting...");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("Invalid option!");
+                    break;
+            }
+
+            if (inputIndex >= automatedInputs.length && running) {
+                System.out.println("\n--- SIMULATION COMPLETE ---");
+            }
+        }
+    }
+}
