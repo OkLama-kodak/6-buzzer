@@ -1,14 +1,12 @@
 package quarter2practicalexam;
 
-import org.junit.Test;
-import java.util.Scanner
+import java.util.Scanner;
 
 public class FastFoodTest {
-    @Test
-    public void testFastFood() {
-        int choice;
-        public void start(Scanner scanner) {
 
+
+        public void start(Scanner scanner) {
+int choice;
 
         do {
             System.out.println("==============================");
@@ -68,5 +66,5 @@ public class FastFoodTest {
 
 
             }
-    }
-}
+
+
