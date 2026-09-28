@@ -8,12 +8,15 @@ public class FastFoodTest {
         int choice = 3;
 
         do {
-            System.out.println("==========================");
-            System.out.println("      Khurt's FastFood       ");
-            System.out.println("1. Drinks ");
-            System.out.println("2. Chicken");
+            System.out.println("==============================");
+            System.out.println("       FAST FOOD MENU");
+            System.out.println("==============================");
+            System.out.println("1. Burger");
+            System.out.println("2. Fries");
             System.out.println("3. Exit");
+            System.out.println("==============================");
+            System.out.print("Choose an option: ");
 
-        } while (choice != 3);
+        }
     }
 }
