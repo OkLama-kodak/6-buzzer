@@ -1,11 +1,14 @@
 package quarter2practicalexam;
 
 import org.junit.Test;
+import java.util.Scanner
 
 public class FastFoodTest {
     @Test
     public void testFastFood() {
-        int choice = 3;
+        int choice;
+        public void start(Scanner scanner) {
+
 
         do {
             System.out.println("==============================");
@@ -17,6 +20,38 @@ public class FastFoodTest {
             System.out.println("==============================");
             System.out.print("Choose an option: ");
 
-        }
+            choice = scanner.nextInt();
+
+
+            switch (choice) {
+
+                case 1:
+                    System.out.println("\n===== BURGER OPTIONS =====");
+                    System.out.println("1. Combo");
+                    System.out.println("2. Solo");
+                    System.out.print("Choose an option: ");
+                    int burgerChoice = scanner.nextInt();
+
+                    if (burgerChoice == 1) {
+                        System.out.println("You ordered a Burger Combo!");
+                        System.out.println("Burger + Fries + Drink");
+                    }
+                    else if (burgerChoice == 2) {
+                        System.out.println("You ordered a Solo Burger!");
+                    }
+                    else {
+                        System.out.println("Invalid burger option.");
+                    }
+
+                    System.out.println();
+                    break;
+
+
+
+
+
+
+
+            }
     }
 }
