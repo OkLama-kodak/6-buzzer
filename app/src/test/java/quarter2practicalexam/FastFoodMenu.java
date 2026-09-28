@@ -2,11 +2,11 @@ package quarter2practicalexam;
 
 import java.util.Scanner;
 
-public class FastFoodTest {
+public class FastFoodMenu {
 
 
-        public void start(Scanner scanner) {
-int choice;
+    public void start(Scanner scanner) {
+        int choice;
 
         do {
             System.out.println("==============================");
@@ -33,11 +33,9 @@ int choice;
                     if (burgerChoice == 1) {
                         System.out.println("You ordered a Burger Combo!");
                         System.out.println("Burger + Fries + Drink");
-                    }
-                    else if (burgerChoice == 2) {
+                    } else if (burgerChoice == 2) {
                         System.out.println("You ordered a Solo Burger!");
-                    }
-                    else {
+                    } else {
                         System.out.println("Invalid burger option.");
                     }
 
@@ -58,13 +56,18 @@ int choice;
             }
 
         } while (choice != 3);
-        }
+    }
+
+    public static void main(String[] args) {
+        Scanner scanner = new Scanner(System.in);
+
+        FastFoodMenu fastFoodSystem = new FastFoodMenu();
+        fastFoodSystem.start(scanner);
+
+        scanner.close();
 
 
-
-
-
-
-            }
+    }
+}
 
 
