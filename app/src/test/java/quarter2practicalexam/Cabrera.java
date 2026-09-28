@@ -1,9 +1,9 @@
 package quarter2practicalexam;
 
-
+import org.junit.Test;
 
 public class Cabrera {
-
+@Test
 
     public void testLibraryFlow() {
         System.out.println("--- GENERATING LIBRARY TEST DATA ---");
