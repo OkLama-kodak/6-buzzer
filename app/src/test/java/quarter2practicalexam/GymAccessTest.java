@@ -91,6 +91,28 @@ public class GymAccessTest {
                     break;
 
                 case "4":
+                    System.out.println("\n--- CLAIM GYM PERKS ---");
+                    System.out.print("Enter total gym visits: ");
+
+                    if (inputIndex < simulatedInputs.length) {
+                        String visitsInput = simulatedInputs[inputIndex++].trim();
+                        System.out.println(visitsInput);
+
+                        try {
+                            int visitCount = Integer.parseInt(visitsInput);
+
+                            if (visitCount < 10) {
+                                System.out.println("Keep Working Out! (Need Atleast 10 Visits)");
+                            } else {
+                                System.out.println("Claiming Free Protein Shake & Towel!");
+                            }
+                        } catch (NumberFormatException e) {
+                            System.out.println("Error: Visit count must be a number!");
+                        }
+                    }
+                    break;
+
+                case "5":
                     System.out.println("Exiting system... Thank you for visiting!");
                     running = false;
                     break;
