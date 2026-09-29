@@ -31,3 +31,39 @@ public class GymAccessTest {
                 case "1":
                     System.out.println("Welcome to the Gym Floor!");
                     break;
+
+                case "2":
+                    System.out.println("Hiring trainer...");
+                    System.out.println("Enter level:");
+
+                    if (inputIndex < simulatedInputs.length) {
+                        String levelInput = simulatedInputs[inputIndex++];
+                        System.out.println(levelInput);
+
+                        int level = Integer.parseInt(levelInput);
+
+                        if (level == 1) {
+                            System.out.println("Trainer Assigned");
+                        } else if (level == 2) {
+                            System.out.println("Upgrade Required");
+                        } else {
+                            System.out.println("Invalid membership level!");
+                        }
+                    }
+                    break;
+
+                case "3":
+                    System.out.println("Exiting...");
+                    running = false;
+                    break;
+
+                default:
+                    System.out.println("Invalid option!");
+            }
+
+            if (inputIndex >= simulatedInputs.length && running) {
+                System.out.println("\n--- SIMULATION COMPLETE ---");
+            }
+        }
+    }
+}
