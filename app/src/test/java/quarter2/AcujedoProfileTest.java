@@ -16,7 +16,7 @@ public class AcujedoProfileTest {
         System.out.println("Hello, my name is" + myName + "and i am " + myAge );
         System.out.println( "My pets name is " + petName);
         System.out.println( " My favorite food is" + myFavFood);
-
+        System.out.println( " --- END OF DIGITAL PROFILE ---");
 
     }
 }
