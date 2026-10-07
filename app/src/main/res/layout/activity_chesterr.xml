@@ -7,4 +7,11 @@
     android:layout_height="match_parent"
     tools:context=".Test.Chesterr">
 
+    <Button
+        android:id="@+id/button"
+        android:layout_width="106dp"
+        android:layout_height="60dp"
+        android:text="do NOT click me"
+        tools:layout_editor_absoluteX="25dp"
+        tools:layout_editor_absoluteY="60dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
