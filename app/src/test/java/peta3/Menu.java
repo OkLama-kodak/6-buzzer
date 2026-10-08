@@ -8,7 +8,7 @@ public class Menu {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
-        List<String> tasks = new ArrayList<>();
+        List<String> tasks = new ArrayList<>();3
         List<String> notifications = new ArrayList<>();
 
         // Add default items
