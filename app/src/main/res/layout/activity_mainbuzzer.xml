@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:visibility="visible"
-    tools:context=".MAINBuzzer">
+    tools:context=".mainbuzzer">
 
     <ImageView
         android:id="@+id/imageView3"
@@ -21,6 +21,7 @@
         android:id="@+id/button7"
         android:layout_width="57dp"
         android:layout_height="57dp"
+        android:backgroundTint="#00FFFFFF"
         android:text="Button"
         android:visibility="visible"
         app:layout_constraintBottom_toBottomOf="parent"
