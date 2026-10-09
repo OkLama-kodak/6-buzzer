@@ -349,11 +349,9 @@
         android:id="@+id/button53"
         android:layout_width="59dp"
         android:layout_height="74dp"
-        android:layout_marginTop="566dp"
-        android:layout_marginEnd="294dp"
         android:backgroundTint="#00FFFFFF"
         android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteX="58dp"
+        tools:layout_editor_absoluteY="564dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
