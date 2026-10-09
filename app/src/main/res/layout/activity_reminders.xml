@@ -38,37 +38,4 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="237dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="392dp"
-        android:layout_marginEnd="82dp"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button15"
-        android:layout_width="237dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="478dp"
-        android:layout_marginEnd="82dp"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button19"
-        android:layout_width="237dp"
-        android:layout_height="57dp"
-        android:layout_marginTop="576dp"
-        android:layout_marginEnd="82dp"
-        android:backgroundTint="#00FFFFFF"
-        android:text="Button"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
 </androidx.constraintlayout.widget.ConstraintLayout>
