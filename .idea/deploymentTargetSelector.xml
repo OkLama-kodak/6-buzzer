@@ -6,10 +6,13 @@
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
+<<<<<<< Updated upstream
       <SelectionState runConfigName="carian (1)">
         <option name="selectionMode" value="DROPDOWN" />
         <DialogSelection />
       </SelectionState>
+=======
+>>>>>>> Stashed changes
     </selectionStates>
   </component>
 </project>
