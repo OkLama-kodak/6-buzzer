@@ -9,48 +9,20 @@
 
     <ImageView
         android:id="@+id/imageView5"
-        android:layout_width="452dp"
-        android:layout_height="782dp"
-        app:srcCompat="@drawable/screenshot_2026_10_07_160958"
-        tools:layout_editor_absoluteX="-19dp"
-        tools:layout_editor_absoluteY="-1dp"
-        tools:ignore="MissingConstraints" />
 
     <Button
         android:id="@+id/button12"
-        android:layout_width="103dp"
-        android:layout_height="52dp"
         android:background="@android:color/transparent"
-        android:visibility="visible"
         app:cornerRadius="150dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.216" />
 
-    <Button
-        android:id="@+id/button13"
-        android:layout_width="64dp"
-        android:layout_height="76dp"
-        android:background="@android:color/transparent"
-        android:visibility="visible"
-        app:cornerRadius="500dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.005"
-        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.01" />
 
-    <Button
-        android:id="@+id/button14"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Button"
-        tools:layout_editor_absoluteX="257dp"
-        tools:layout_editor_absoluteY="300dp"
-        tools:ignore="MissingConstraints" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
