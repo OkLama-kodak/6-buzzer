@@ -1,76 +1,178 @@
+
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".AddingTask">
+    android:background="@drawable/task_background"
+    android:clipChildren="false"
+    android:clipToPadding="false">
 
-    <ImageView
-        android:id="@+id/imageView5"
-        android:layout_width="414dp"
-        android:layout_height="769dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.333"
-        app:layout_constraintStart_toStartOf="parent"
+    <!-- Dark gray header -->
+    <View
+        android:id="@+id/topBackground"
+        android:layout_width="0dp"
+        android:layout_height="280dp"
+        android:background="@drawable/header_gradient"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/screenshot_2026_10_07_160958" />
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Rounded yellow content background -->
+    <View
+        android:id="@+id/yellowPanel"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/yellow_panel"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/topBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Settings gear -->
+    <ImageView
+        android:id="@+id/settingsIcon"
+        android:layout_width="55dp"
+        android:layout_height="55dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+
+        android:scaleType="fitCenter"
+        android:contentDescription="Settings"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <!-- Jake the Dog banner -->
+    <ImageView
+        android:id="@+id/jakeBanner"
+        android:layout_width="0dp"
+        android:layout_height="125dp"
+        android:layout_marginTop="42dp"
+
+        android:scaleType="fitCenter"
+        android:contentDescription="Jake the Dog"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- TASKS title -->
+    <TextView
+        android:id="@+id/tasksTitle"
+        android:layout_width="0dp"
+        android:layout_height="78dp"
+        android:layout_marginStart="92dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="95dp"
+        android:background="@drawable/title_gradient"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TASKS"
+        android:textColor="#FFFFFF"
+        android:textSize="66sp"
+        android:textStyle="bold"
+        android:includeFontPadding="false"
+        android:maxLines="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Nonfunctional Add task button -->
+    <TextView
+        android:id="@+id/addTaskButton"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="5dp"
+        android:background="@drawable/button_gradient"
+        android:gravity="center"
+        android:paddingStart="17dp"
+        android:paddingEnd="17dp"
+        android:text="Add task"
+        android:textColor="#FFFFFF"
+        android:textSize="25sp"
+        android:fontFamily="sans-serif-condensed"
+        android:textStyle="bold"
+        android:maxLines="1"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Task 1 -->
+    <TextView
+        android:id="@+id/taskOne"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="255dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TASK 1: DONE"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="24sp"
+        android:autoSizeMaxTextSize="48sp"
+        android:autoSizeStepGranularity="2sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Task 2 -->
+    <TextView
+        android:id="@+id/taskTwo"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="365dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TASK 2: DUE"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="24sp"
+        android:autoSizeMaxTextSize="48sp"
+        android:autoSizeStepGranularity="2sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Task 3 -->
+    <TextView
+        android:id="@+id/taskThree"
+        android:layout_width="0dp"
+        android:layout_height="65dp"
+        android:layout_marginTop="475dp"
+        android:gravity="center"
+        android:fontFamily="sans-serif-condensed"
+        android:text="TASK 3: DUE"
+        android:textColor="#FFFFFF"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:maxLines="1"
+        android:autoSizeTextType="uniform"
+        android:autoSizeMinTextSize="24sp"
+        android:autoSizeMaxTextSize="48sp"
+        android:autoSizeStepGranularity="2sp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
 
     <Button
-        android:id="@+id/button12"
-        android:layout_width="107dp"
-        android:layout_height="58dp"
-        android:background="@android:color/transparent"
-        app:cornerRadius="150dp"
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Button"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.918"
+        app:layout_constraintStart_toStartOf="@+id/topBackground"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.188" />
+        app:layout_constraintVertical_bias="0.19" />
 
-    <ToggleButton
-        android:id="@+id/toggleButton"
-        android:layout_width="103dp"
-        android:layout_height="63dp"
-        android:contentDescription='"DUE" is fixed, meaning it will only be "DONE" if you press it.'
-        android:textOff="DUE"
-        android:textOn="DONE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.788"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.586" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton2"
-        android:layout_width="114dp"
-        android:layout_height="70dp"
-        android:contentDescription='"DUE" is fixed, meaning it will only be "DONE" if you press it.'
-        android:textOff="DUE"
-        android:textOn="DONE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.782"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.408" />
-
-    <ToggleButton
-        android:id="@+id/toggleButton3"
-        android:layout_width="103dp"
-        android:layout_height="63dp"
-        android:contentDescription='"DUE" is fixed, meaning it will only be "DONE" if you press it.'
-        android:textOff="DUE"
-        android:textOn="DONE"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.827"
-        app:layout_constraintStart_toStartOf="@+id/imageView5"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.755" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
