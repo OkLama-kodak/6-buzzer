@@ -32,18 +32,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <!-- Settings gear -->
-    <ImageView
-        android:id="@+id/settingsIcon"
-        android:layout_width="55dp"
-        android:layout_height="55dp"
-        android:layout_marginStart="12dp"
-        android:layout_marginTop="12dp"
-
-        android:scaleType="fitCenter"
-        android:contentDescription="Settings"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
 
     <!-- Jake the Dog banner -->
     <ImageView
@@ -162,17 +150,50 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
-    <Button
-        android:id="@+id/button2"
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDone"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Button"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:backgroundTint="#00000000"
+        app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.918"
-        app:layout_constraintStart_toStartOf="@+id/topBackground"
+        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.19" />
+        app:layout_constraintVertical_bias="0.398" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDone2"
+        android:layout_width="97dp"
+        android:layout_height="53dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:backgroundTint="#00000000"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/taskTwo"
+        app:layout_constraintHorizontal_bias="0.757"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.556" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btnDone3"
+        android:layout_width="97dp"
+        android:layout_height="53dp"
+        android:textColor="#FFFFFF"
+        android:textSize="14sp"
+        app:backgroundTint="#00000000"
+        app:cornerRadius="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/taskTwo"
+        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.718" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
