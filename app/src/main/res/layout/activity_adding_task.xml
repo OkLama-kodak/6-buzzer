@@ -87,35 +87,38 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <!-- Task 1 -->
+
+    <!-- Task 2 -->
+
     <TextView
         android:id="@+id/taskOne"
         android:layout_width="0dp"
         android:layout_height="65dp"
-        android:layout_marginTop="255dp"
-        android:gravity="center"
+        android:layout_marginTop="252dp"
+        android:autoSizeMaxTextSize="48sp"
+        android:autoSizeMinTextSize="24sp"
+        android:autoSizeStepGranularity="2sp"
+        android:autoSizeTextType="uniform"
         android:fontFamily="sans-serif-condensed"
-        android:text="TASK 1: DONE"
+        android:gravity="left"
+        android:maxLines="1"
+        android:text=" TASK 1"
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:textStyle="bold"
-        android:maxLines="1"
-        android:autoSizeTextType="uniform"
-        android:autoSizeMinTextSize="24sp"
-        android:autoSizeMaxTextSize="48sp"
-        android:autoSizeStepGranularity="2sp"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Task 2 -->
     <TextView
         android:id="@+id/taskTwo"
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginTop="365dp"
-        android:gravity="center"
+        android:gravity="left"
         android:fontFamily="sans-serif-condensed"
-        android:text="TASK 2: DUE"
+        android:text="TASK 2: "
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:textStyle="bold"
@@ -134,9 +137,9 @@
         android:layout_width="0dp"
         android:layout_height="65dp"
         android:layout_marginTop="475dp"
-        android:gravity="center"
+        android:gravity="left"
         android:fontFamily="sans-serif-condensed"
-        android:text="TASK 3: DUE"
+        android:text="TASK 3: "
         android:textColor="#FFFFFF"
         android:textSize="48sp"
         android:textStyle="bold"
@@ -151,8 +154,8 @@
 
     <com.google.android.material.button.MaterialButton
 
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="100dp"
+        android:layout_height="66dp"
         android:text="Done"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
@@ -160,42 +163,42 @@
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.764"
+        app:layout_constraintHorizontal_bias="0.823"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.398" />
+        app:layout_constraintVertical_bias="0.378" />
 
     <Button
         android:id="@+id/btnSubmitDone"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="101dp"
+        android:layout_height="69dp"
+        android:text="Done"
         android:textColor="#FFFFFF"
-       android:text="Done"
         android:textSize="14sp"
         app:backgroundTint="#00000000"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.559" />
+        app:layout_constraintVertical_bias="0.551" />
 
     <Button
         android:id="@+id/btnDone3"
-        android:layout_width="97dp"
-        android:layout_height="53dp"
+        android:layout_width="101dp"
+        android:layout_height="69dp"
+        android:text="done"
         android:textColor="#FFFFFF"
         android:textSize="14sp"
-        android:text="done"
         app:backgroundTint="#00000000"
         app:cornerRadius="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="@+id/taskTwo"
-        app:layout_constraintHorizontal_bias="0.786"
+        app:layout_constraintHorizontal_bias="0.822"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.718" />
+        app:layout_constraintVertical_bias="0.717" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
