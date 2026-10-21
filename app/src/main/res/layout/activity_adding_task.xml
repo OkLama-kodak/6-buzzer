@@ -10,29 +10,35 @@
     android:clipToPadding="false">
 
     <!-- Dark gray header -->
+
+    <!-- Rounded yellow content background -->
+
+
+    <!-- Jake the Dog banner -->
+
     <View
         android:id="@+id/topBackground"
         android:layout_width="0dp"
         android:layout_height="280dp"
         android:background="@drawable/header_gradient"
-        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <!-- Rounded yellow content background -->
     <View
         android:id="@+id/yellowPanel"
-        android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_width="415dp"
+        android:layout_height="629dp"
         android:background="@drawable/yellow_panel"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/topBackground"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/topBackground"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
 
-
-    <!-- Jake the Dog banner -->
     <ImageView
         android:id="@+id/jakeBanner"
         android:layout_width="0dp"
@@ -200,6 +206,31 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.717" />
+
+    <ImageView
+        android:id="@+id/imageView7"
+        android:layout_width="324dp"
+        android:layout_height="184dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/topBackground"
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/buzzers_removebg_preview"
+        tools:ignore="MissingConstraints" />
+
+    <ImageView
+        android:id="@+id/imageView8"
+        android:layout_width="105dp"
+        android:layout_height="141dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.052"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.027"
+        app:srcCompat="@drawable/jake_the_dog_from_adventure_time_removebg_preview" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
