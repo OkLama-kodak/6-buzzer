@@ -228,14 +228,6 @@
         </LinearLayout>
 
         <!-- Decorative message -->
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:text="Good things take time ♡"
-            android:textColor="#40351F"
-            android:textSize="16sp"
-            android:textStyle="italic" />
 
     </LinearLayout>
 
