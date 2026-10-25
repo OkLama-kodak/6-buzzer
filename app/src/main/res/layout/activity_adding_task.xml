@@ -53,14 +53,21 @@
             android:textStyle="bold"
             android:fontFamily="sans-serif-condensed" />
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Small steps. Big progress."
-            android:textColor="#51462F"
-            android:textSize="15sp" />
 
         <!-- Section heading -->
+
+        <Button
+            android:id="@+id/btnAddTask"
+            android:layout_width="90dp"
+            android:layout_height="48dp"
+            android:backgroundTint="#FFB91F"
+            android:elevation="0dp"
+            android:padding="4dp"
+            android:text="+ Add Task"
+            android:textColor="#25241F"
+            android:textSize="11sp"
+            android:textStyle="bold" />
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
