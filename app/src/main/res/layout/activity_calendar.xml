@@ -50,56 +50,107 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="1.0" />
 
-    <TextView
-        android:id="@+id/textView"
-        android:layout_width="92dp"
-        android:layout_height="33dp"
+    <Button
+        android:id="@+id/button15"
+        android:layout_width="107dp"
+        android:layout_height="57dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="161dp"
-        android:layout_marginEnd="311dp"
-        android:layout_marginBottom="538dp"
-        android:text="Monday"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="288dp"
+        android:layout_marginBottom="536dp"
+        android:backgroundTint="#00F6E898"
+        android:text="Add Due Date"
+        android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/textView3"
-        android:layout_width="92dp"
-        android:layout_height="33dp"
-        android:layout_marginStart="115dp"
-        android:layout_marginTop="161dp"
-        android:layout_marginEnd="212dp"
-        android:layout_marginBottom="538dp"
-        android:text="Tuesday"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+    <ImageView
+        android:id="@+id/imageView11"
+        android:layout_width="136dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="277dp"
+        android:layout_marginBottom="519dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.8"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.0"
+        app:srcCompat="@drawable/button_gradient" />
 
-    <TextView
-        android:id="@+id/textView5"
-        android:layout_width="114dp"
-        android:layout_height="35dp"
-        android:layout_marginStart="211dp"
-        android:layout_marginTop="61dp"
-        android:layout_marginEnd="86dp"
-        android:layout_marginBottom="538dp"
-        android:text="Wednesday"
-        android:textAppearance="@style/TextAppearance.AppCompat.Large"
-        android:textSize="21dp"
+    <ImageView
+        android:id="@+id/imageView12"
+        android:layout_width="377dp"
+        android:layout_height="424dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="18dp"
+        android:layout_marginBottom="94dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="1.0" />
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/_844277498_1700319978503236_1693675871778298097_n" />
+
+    <Button
+        android:id="@+id/button17"
+        android:layout_width="107dp"
+        android:layout_height="57dp"
+        android:layout_marginStart="262dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="42dp"
+        android:layout_marginBottom="536dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Remove Due Date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView14"
+        android:layout_width="136dp"
+        android:layout_height="63dp"
+        android:layout_marginStart="246dp"
+        android:layout_marginTop="138dp"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="530dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/button_gradient" />
+
+    <ImageView
+        android:id="@+id/imageView16"
+        android:layout_width="442dp"
+        android:layout_height="54dp"
+        android:layout_marginTop="691dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/bg_bottom_nav" />
+
+    <Button
+        android:id="@+id/button19"
+        android:layout_width="331dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="22dp"
+        android:layout_marginTop="683dp"
+        android:layout_marginEnd="58dp"
+        android:backgroundTint="#00FFFFFF"
+        android:text="Exit"
+        android:textSize="30dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
