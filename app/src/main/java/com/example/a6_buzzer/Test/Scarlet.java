@@ -10,7 +10,7 @@ import androidx.core.view.WindowInsetsCompat;
 
 import com.example.a6_buzzer.R;
 
-public class scarlet extends AppCompatActivity {
+public class Scarlet extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
