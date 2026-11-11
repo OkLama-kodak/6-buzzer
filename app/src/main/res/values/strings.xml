@@ -1,3 +1,122 @@
 <resources>
     <string name="app_name">6-buzzer</string>
+    <string name="cd_settings">Settings</string>
+    <string name="title_buzzers">BUZZERS</string>
+    <string name="title_tasks">TASKS</string>
+    <string name="title_calendar">CALENDAR</string>
+    <string name="title_reminders">REMINDERS</string>
+    <string name="title_alarms">ALARMS</string>
+    <string name="title_settings">SETTINGS</string>
+
+    <!-- UI Symbols & Emoji Icons -->
+    <string name="symbol_menu">☰</string>
+    <string name="symbol_star">✧</string>
+    <string name="symbol_bullet">●</string>
+    <string name="symbol_arrow">›</string>
+    <string name="symbol_gear">⚙</string>
+    <string name="icon_tasks">📋</string>
+    <string name="icon_calendar">📅</string>
+    <string name="icon_reminders">🔔</string>
+    <string name="icon_alarms">⏰</string>
+
+    <!-- New Design Theme Strings -->
+    <string name="hero_title">Welcome Back! ✦</string>
+    <string name="hero_sub">You have 3 tasks pending today.</string>
+    <string name="btn_quick_add">+ Quick Add</string>
+    <string name="section_explore">EXPLORE CATEGORIES</string>
+    <string name="badge_3_due">3 Due</string>
+    <string name="badge_2_events">2 Events</string>
+    <string name="badge_active">Active</string>
+    <string name="badge_alarm_time">09:00 AM</string>
+
+    <!-- Home Dashboard Strings -->
+    <string name="btn_dashboard">+ DASHBOARD</string>
+    <string name="section_categories">CATEGORIES</string>
+    <string name="tasks_desc">Manage your daily to-do list</string>
+    <string name="cal_desc">View due dates &amp; events</string>
+    <string name="rem_desc">Set timely alerts &amp; notifications</string>
+    <string name="alarm_desc">Configure wake-up alarms</string>
+
+    <!-- Tasks Screen -->
+    <string name="btn_add_task">+ ADD TASK</string>
+    <string name="section_your_tasks">YOUR TASKS</string>
+    <string name="task1_title">Task 1: DONE</string>
+    <string name="task1_sub">09/20/2026  •  High priority</string>
+    <string name="task2_title">Task 2: DUE</string>
+    <string name="task2_sub">09/22/2026  •  Medium priority</string>
+    <string name="task3_title">Task 3: DUE</string>
+    <string name="task3_sub">09/25/2026  •  Low priority</string>
+    <string name="priority_high">High</string>
+    <string name="priority_medium">Medium</string>
+    <string name="priority_low">Low</string>
+
+    <!-- Calendar Screen -->
+    <string name="btn_add_date">+ ADD DUE DATE</string>
+    <string name="section_calendar_dates">DUE DATES &amp; AGENDA</string>
+    <string name="cal_week_mon">MON\n20</string>
+    <string name="cal_week_tue">TUE\n21</string>
+    <string name="cal_week_wed">WED\n22</string>
+    <string name="cal_week_thu">THU\n23</string>
+    <string name="cal_week_fri">FRI\n24</string>
+    <string name="cal1_title">Schoolwork Due</string>
+    <string name="cal1_sub">09:00 AM  •  High priority</string>
+    <string name="cal2_title">Project Submission</string>
+    <string name="cal2_sub">02:30 PM  •  Medium priority</string>
+    <string name="cal3_title">Exam Date</string>
+    <string name="cal3_sub">05:00 PM  •  Low priority</string>
+
+    <!-- Reminders Screen -->
+    <string name="btn_add_reminder">+ ADD REMINDER</string>
+    <string name="section_your_reminders">ACTIVE REMINDERS</string>
+    <string name="filter_all">All</string>
+    <string name="filter_active">Active</string>
+    <string name="filter_completed">Completed</string>
+    <string name="rem1_time">08:00 AM</string>
+    <string name="rem1_title">Study Math</string>
+    <string name="rem1_sub">Repeat: Daily</string>
+    <string name="rem2_time">10:00 AM</string>
+    <string name="rem2_title">Drink Water</string>
+    <string name="rem2_sub">Repeat: Hourly</string>
+    <string name="rem3_time">05:00 PM</string>
+    <string name="rem3_title">Submit Assignment</string>
+    <string name="rem3_sub">Repeat: Once</string>
+    <string name="status_active">Active</string>
+    <string name="status_upcoming">Upcoming</string>
+
+    <!-- Alarms Screen -->
+    <string name="btn_add_alarm">+ ADD ALARM</string>
+    <string name="section_your_alarms">SAVED ALARMS</string>
+    <string name="alarm1_time">09:00 AM</string>
+    <string name="alarm1_title">Peta 1</string>
+    <string name="alarm1_sub">Mon, Tue, Wed, Thu, Fri</string>
+    <string name="alarm2_time">12:00 PM</string>
+    <string name="alarm2_title">Peta 2</string>
+    <string name="alarm2_sub">Every day</string>
+    <string name="alarm3_time">05:00 PM</string>
+    <string name="alarm3_title">Peta 3</string>
+    <string name="alarm3_sub">Sat, Sun</string>
+    <string name="status_on">ON</string>
+    <string name="status_off">OFF</string>
+
+    <!-- Settings Screen -->
+    <string name="btn_force_stop">FORCE STOP</string>
+    <string name="section_preferences">PREFERENCES</string>
+    <string name="section_general_options">GENERAL OPTIONS</string>
+    <string name="section_system_actions">SYSTEM ACTIONS</string>
+    <string name="set1_title">Add Date Option</string>
+    <string name="set1_sub">Configure calendar due dates</string>
+    <string name="set2_title">Add Schoolworks</string>
+    <string name="set2_sub">Manage school tasks &amp; subjects</string>
+    <string name="set3_title">Force Stop App</string>
+    <string name="set3_sub">Terminate background processes</string>
+    <string name="badge_edit">Edit</string>
+    <string name="badge_action">Action</string>
+
+    <!-- Navigation Strings -->
+    <string name="nav_home">⌂\nHome</string>
+    <string name="nav_tasks">☷\nTasks</string>
+    <string name="nav_calendar">📅\nCalendar</string>
+    <string name="nav_reminders">🔔\nReminders</string>
+    <string name="nav_alarms">⏰\nAlarms</string>
+    <string name="nav_settings">⚙\nSettings</string>
 </resources>
