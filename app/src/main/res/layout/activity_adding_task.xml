@@ -45,6 +45,9 @@
 
         <!-- Title -->
 
+
+        <!-- Section heading -->
+
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -54,9 +57,6 @@
             android:textColor="#24221D"
             android:textSize="42sp"
             android:textStyle="bold" />
-
-
-        <!-- Section heading -->
 
         <Button
             android:id="@+id/btnAddTask"
